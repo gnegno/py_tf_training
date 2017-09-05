@@ -1,4 +1,4 @@
-import numpy as np
+# import numpy as np
 import tensorflow as tf
 
 # Model parameters
@@ -25,4 +25,4 @@ for i in range(1000):
 
 # evaluate training accuracy
 curr_W, curr_b, curr_loss = sess.run([W, b, loss], {x:x_train, y:y_train})
-print("W: %s\nb: %s\nloss: %s" %(curr_W, curr_b, curr_lossS))
+print("W: %s\nb: %s\nloss: %s" %(curr_W, curr_b, curr_loss))
